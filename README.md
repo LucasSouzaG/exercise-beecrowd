@@ -16,7 +16,7 @@ Segue os requisitos necessários para testar cada código em sua máquina:
 Cada arquivo deve ser executado de forma independente da seguinte forma:
 
 ```
-python [nome do arquivo]
+python [nome do arquivo].py
 
 Ex: python 1259_Pares_e_Impares.py
 ```
