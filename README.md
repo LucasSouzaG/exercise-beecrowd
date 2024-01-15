@@ -29,6 +29,6 @@ Cada exercício foi validade e testado pela própria plataforma da beecrowd, com
 
 ## 🛠️ Construído com
 
-* [Python] Linguagem de programação
-* [Visual studio code] Editor de código
-* [Windows 11 Home] Sistema Operacional
+* [Python](https://www.python.org) - Linguagem de programação
+* [Visual studio code](https://code.visualstudio.com) - Editor de código
+* Windows 11 Home - Sistema Operacional
