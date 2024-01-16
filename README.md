@@ -25,7 +25,7 @@ Ex: python 1259_Pares_e_Impares.py
 
 Cada exercício foi validado e testado pela própria plataforma da [beecrowd](https://www.beecrowd.com.br/judge/en/login), com exito de 100% de sucesso na resolução de cada exercício.
 
-<img src="https://github.com/LucasSouzaG/exercise-beecrowd/assets/66741091/b8ec25b2-b8a7-4363-9e9d-8c1b2b17e491">
+<img src="https://github.com/LucasSouzaG/exercise-beecrowd/assets/66741091/a3cbc49d-351d-44f9-8dcf-738b4f30fb2e">
 
 ## 🛠️ Construído com
 
