@@ -1,0 +1,84 @@
+'''
+Leia 3 valores de ponto flutuante A, B e C e ordene-os em ordem decrescente, de modo que o lado A representa o maior dos 3 lados. A seguir, determine o tipo de triângulo que estes três lados formam, com base nos seguintes casos, sempre escrevendo uma mensagem adequada:
+
+se A ≥ B+C, apresente a mensagem: NAO FORMA TRIANGULO
+se A2 = B2 + C2, apresente a mensagem: TRIANGULO RETANGULO
+se A2 > B2 + C2, apresente a mensagem: TRIANGULO OBTUSANGULO
+se A2 < B2 + C2, apresente a mensagem: TRIANGULO ACUTANGULO
+se os três lados forem iguais, apresente a mensagem: TRIANGULO EQUILATERO
+se apenas dois dos lados forem iguais, apresente a mensagem: TRIANGULO ISOSCELES
+Entrada
+A entrada contem três valores de ponto flutuante de dupla precisão A (0 < A) , B (0 < B) e C (0 < C).
+
+Saída
+Imprima todas as classificações do triângulo especificado na entrada.
+
+Exemplos de Entrada	Exemplos de Saída
+
+7.0 5.0 7.0
+
+TRIANGULO ACUTANGULO
+TRIANGULO ISOSCELES
+
+6.0 6.0 10.0
+
+TRIANGULO OBTUSANGULO
+TRIANGULO ISOSCELES
+
+6.0 6.0 6.0
+
+TRIANGULO ACUTANGULO
+TRIANGULO EQUILATERO
+
+5.0 7.0 2.0
+
+NAO FORMA TRIANGULO
+
+6.0 8.0 10.0
+
+TRIANGULO RETANGULO
+
+'''
+# Recebe os valores e coloca em uma lista
+input_valores_triangulo = input().split()
+
+# Cria uma outra lista com List Comprehension convertendo os valores para float
+valores_triangulo = [float(valor) for valor in input_valores_triangulo]
+
+# Ordenando em ordem decrescente
+valores_triangulo.sort(reverse=True)
+
+list_resultado = []
+
+
+# A ≥ (B + C) - NAO FORMA TRIANGULO
+if valores_triangulo[0] >=  (valores_triangulo[1] + valores_triangulo[2]):
+    list_resultado.append('NAO FORMA TRIANGULO')
+else:
+    # A^2 = B^2 + C^2 - TRIANGULO RETANGULO
+    if valores_triangulo[0]**2 ==  (valores_triangulo[1]**2 + valores_triangulo[2]**2):
+        list_resultado.append('TRIANGULO RETANGULO')
+        
+    # A^2 > B^2 + C^2 - TRIANGULO OBTUSANGULO
+    if valores_triangulo[0]**2 >  (valores_triangulo[1]**2 + valores_triangulo[2]**2):
+        list_resultado.append('TRIANGULO OBTUSANGULO')
+
+    # A^2 < B^2 + C^2 - TRIANGULO ACUTANGULO
+    if valores_triangulo[0]**2 <  (valores_triangulo[1]**2 + valores_triangulo[2]**2):
+        list_resultado.append('TRIANGULO ACUTANGULO')
+
+    # A = B = C - TRIANGULO EQUILATERO
+    if valores_triangulo[0]**2 == valores_triangulo[1]**2 == valores_triangulo[2]**2:
+        list_resultado.append('TRIANGULO EQUILATERO')
+
+    # dois dos lados forem iguais - TRIANGULO ISOSCELES
+
+    count = 0
+    count = count + 1 if valores_triangulo[0] == valores_triangulo[1] else count - 0
+    count = count + 1 if valores_triangulo[0] == valores_triangulo[2] else count - 0
+    count = count + 1 if valores_triangulo[1] == valores_triangulo[2] else count - 0
+
+    if count == 1:
+        list_resultado.append('TRIANGULO ISOSCELES')
+
+print('\n'.join(list_resultado))
