@@ -8,6 +8,9 @@ Segue os requisitos necessários para testar cada código em sua máquina:
 
 ```
 * Editor de código (sua escolha)
+* Instalação de dependencias para exercícios SQL
+    * Utilize o ambiente virtual de sua escolha
+    * Instação de bibliotecas com o arquvio requirements.txt
 * Python >= 3.11v
 ```
 
@@ -19,6 +22,24 @@ Cada arquivo deve ser executado de forma independente da seguinte forma:
 python [nome do arquivo].py
 
 Ex: python 1259_Pares_e_Impares.py
+```
+
+Para execução de scripts SQL foi utlizado o [DuckDB](https://duckdb.org/docs/stable/)
+
+```
+import duckdb
+
+table = duckdb.read_csv('table.csv')
+
+query = """
+
+SELECT *
+FROM table
+
+"""
+
+duckdb.sql(query).show()
+
 ```
 
 ### ⌨️ Testes
