@@ -8,13 +8,22 @@ Segue os requisitos necessários para testar cada código em sua máquina:
 
 ```
 * Editor de código (sua escolha)
+```
+
+* Python
+```
 * Instalação de dependencias para exercícios SQL
     * Utilize o ambiente virtual de sua escolha
     * Instação de bibliotecas com o arquvio requirements.txt
+    * Comando para pip env: pip install -r requirements.txt    
 * Python >= 3.11v
 ```
+* Node
+```
+Node >= 18.16v
+```
 
-## ⚙️ Executando
+## ⚙️ Executando arquivos Python
 
 Cada arquivo deve ser executado de forma independente da seguinte forma:
 
@@ -40,6 +49,19 @@ FROM table
 
 duckdb.sql(query).show()
 
+```
+
+## ⚙️ Executando arquivos Node
+
+Cada arquivo deve ser executado de forma independente da seguinte forma:
+
+```
+cd [nome da pasta]
+node index.js
+
+Ex: 
+cd exercise\node_2061_As_Abas_de_Pericles
+node index.js
 ```
 
 ### ⌨️ Testes
