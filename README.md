@@ -73,5 +73,7 @@ Cada exercício foi validado e testado pela própria plataforma da [beecrowd](ht
 ## 🛠️ Construído com
 
 * [Python](https://www.python.org) - Linguagem de programação
+* [Node](https://nodejs.org/pt-br) - Linguagem de programação
+* [DuckDB](https://duckdb.org) - Simulação de Banco de dados
 * [Visual studio code](https://code.visualstudio.com) - Editor de código
 * Windows 11 Home - Sistema Operacional
